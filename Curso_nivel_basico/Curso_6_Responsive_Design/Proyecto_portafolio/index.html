@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Montiel Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="header__brand">
+            <img class="header__logo" src="./assets/logo_l.svg" alt="Juan Montiel Portfolio">
+            <span class="header__title">Personal</span>
+        </div>
+
+        <button aria-label="Toggle Menu" class="header__toggle">
+            <img src="./assets/menu.svg" alt="">
+        </button>
+
+        <nav class="header__nav" aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="./assets/CV-Juan-Montiel.pdf" class="header__cta" download>
+            Resume
+        </a>
+
+    </header>
+
+    <main>
+
+        <section class="hero" aria-labelledby="hero-title">
+
+            <img class="hero__image" src="./assets/imgen_hombre.png" alt="Juan Montiel working on a computer">
+
+            <div class="hero__content">
+
+                <h1 class="hero__title" id="hero-title">
+                    Hello I’m <strong>Juan Montiel</strong><br> Frontend <span class="outlined">Developer</span>
+                </h1>
+
+                <p class="hero__description">
+                    I'm Juan Montiel, a frontend developer focused on creating clean, responsive, and user-friendly web experiences.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Discord">
+                        <i class="fa-brands fa-discord" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" aria-label="GitHub">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="skills" id="skills" aria-labelledby="skills-title">
+
+            <h2 id="skills-title">
+                My <strong>Skills</strong>
+            </h2>
+
+            <div class="skills__grid">
+
+                <article class="skill-card">
+                    <div class="skill-card__icon">
+                        <img src="./assets/ts.svg" alt="TypeScript">
+                    </div>
+                    <p>TypeScript</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-card__icon">
+                        <img src="./assets/react.svg" alt="React">
+                    </div>
+                    <p>React</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-card__icon">
+                        <img src="./assets/js.svg" alt="JavaScript">
+                    </div>
+                    <p>JavaScript</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-card__icon">
+                        <img src="./assets/git.svg" alt="Git">
+                    </div>
+                    <p>Git</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-card__icon">
+                        <img src="./assets/node.svg" alt="Node.js">
+                    </div>
+                    <p>Node.js</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="experience" id="experience" aria-labelledby="experience-title">
+
+            <h2 id="experience-title">
+                My <strong>Experience</strong>
+            </h2>
+
+            <article class="experience-card">
+
+                <div class="experience-card__header">
+                    <h3>Frontend Developer</h3>
+                    <p class="experience-card__date">Learning & Building</p>
+                </div>
+
+                <p class="experience-card__description">
+                    I'm focused on learning and creating modern, responsive, and accessible web projects using HTML, CSS, and JavaScript.
+                </p>
+
+            </article>
+
+            <article class="experience-card">
+
+                <div class="experience-card__header">
+                    <h3>Web Design Enthusiast</h3>
+                    <p class="experience-card__date">Current</p>
+                </div>
+
+                <p class="experience-card__description">
+                    Passionate about turning ideas into clean interfaces and improving my skills with every project I build.
+                </p>
+
+            </article>
+
+        </section>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+
+            <div class="about__container">
+
+                <div class="about__image-wrapper">
+                    <img class="about__image" src="./assets/imgen_hombre.png" alt="Juan Montiel working on a computer">
+                </div>
+
+                <div class="about__content">
+
+                    <h2 id="about-title">
+                        About <strong>Me</strong>
+                    </h2>
+
+                    <div class="about__text">
+
+                        <p>
+                            I am Juan Montiel, a passionate frontend developer dedicated to creating clean, responsive, and user-friendly web experiences.
+                        </p>
+
+                        <p>
+                            I'm always learning new technologies and improving my skills to stay current with modern web development practices. Each project is an opportunity to enhance my abilities and deliver quality work.
+                        </p>
+
+                        <p>
+                            I believe that good design combined with clean code creates memorable digital experiences. When I'm not coding, you can find me exploring new technologies or sharing my journey on social media.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="projects" id="projects" aria-labelledby="projects-title">
+
+            <h2 id="projects-title">
+                My <strong>Projects</strong>
+            </h2>
+
+            <div class="project-list">
+
+                <article class="project-card">
+
+                    <div class="project-card__visual">
+                        <div class="project-card__number">01</div>
+                        <img src="./assets/project1.jpg" alt="Preview of Responsive Portfolio project">
+                    </div>
+
+                    <div class="project-card__content">
+
+                        <h3>Responsive Portfolio</h3>
+
+                        <p>
+                            A personal portfolio created with HTML, CSS, and responsive design principles to showcase my frontend development skills.
+                        </p>
+
+                        <a href="#" class="project-card__link" aria-label="View Responsive Portfolio project">
+                            <img src="./assets/flecha.svg" alt="">
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-card__visual">
+                        <div class="project-card__number">02</div>
+                        <img src="./assets/project2.jpg" class="project_img" alt="Preview of Frontend Practice Projects">
+                    </div>
+
+                    <div class="project-card__content">
+
+                        <h3>Frontend Practice Projects</h3>
+
+                        <p>
+                            A collection of web interfaces and components built while learning frontend development and implementing modern CSS techniques.
+                        </p>
+
+                        <a href="#" class="project-card__link" aria-label="View Frontend Practice Projects">
+                            <img src="./assets/flecha.svg" alt="">
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-card__visual">
+                        <div class="project-card__number">03</div>
+                        <img src="./assets/project3.jpg" alt="Preview of Responsive Web Design project">
+                    </div>
+
+                    <div class="project-card__content">
+
+                        <h3>Responsive Web Design</h3>
+
+                        <p>
+                            Multiple responsive web applications demonstrating mobile-first design, flexible layouts, and responsive typography across all devices.
+                        </p>
+
+                        <a href="#" class="project-card__link" aria-label="View Responsive Web Design project">
+                            <img src="./assets/flecha.svg" alt="">
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+
+            <h2 id="testimonials-title">
+                My <strong>Testimonials</strong>
+            </h2>
+
+            <div class="testimonials__list">
+
+                <article class="testimonial-card">
+
+                    <p class="testimonial-card__text">
+                        Juan is committed to learning and improving with every project. His dedication to creating clean code is evident in his work.
+                    </p>
+
+                    <div class="testimonial-card__footer">
+                        <h3>Development Mentor</h3>
+                        <p>Code Review</p>
+                    </div>
+
+                </article>
+
+                <article class="testimonial-card">
+
+                    <p class="testimonial-card__text">
+                        Great frontend developer with a keen eye for responsive design. Delivers quality work and always willing to improve.
+                    </p>
+
+                    <div class="testimonial-card__footer">
+                        <h3>Project Collaborator</h3>
+                        <p>Web Project</p>
+                    </div>
+
+                </article>
+
+                <article class="testimonial-card">
+
+                    <p class="testimonial-card__text">
+                        Excellent work on the responsive portfolio. Shows strong understanding of modern CSS and frontend principles.
+                    </p>
+
+                    <div class="testimonial-card__footer">
+                        <h3>Learning Partner</h3>
+                        <p>Frontend Training</p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+
+            <div class="contact__container">
+
+                <div class="contact__form-wrapper">
+
+                    <h2 id="contact-title">
+                        Let's <strong>Talk</strong>
+                    </h2>
+
+                    <p>
+                        Do you have a project in mind? I'd love to hear about it. Get in touch and let's create something amazing together.
+                    </p>
+
+                    <form class="contact__form">
+
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="Email" inputmode="email" autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="website">Your website (if exists)</label>
+                            <input id="website" name="website" type="url" placeholder="Your website" inputmode="url" autocomplete="url">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">How can I help?</label>
+                            <textarea id="message" name="message" placeholder="How can I help?"></textarea>
+                        </div>
+
+                        <button type="submit" class="contact__button">
+                            Get In Touch
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <div class="contact__info">
+
+                    <h3>Contact Information</h3>
+
+                    <div class="contact__details">
+
+                        <a href="mailto:contact@juanmontiel.dev" class="contact__email">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i> contact@juanmontiel.dev
+                        </a>
+
+                        <p class="contact__phone">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i> +1 (555) 000-0000
+                        </p>
+
+                    </div>
+
+                    <div class="contact__socials">
+
+                        <h4>Follow Me</h4>
+
+                        <div class="social-links">
+
+                            <a href="#" aria-label="GitHub">
+                                <img src="./assets/git.svg" alt="">
+                            </a>
+
+                            <a href="#" aria-label="Reddit">
+                                <img src="./assets/reddit.svg" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

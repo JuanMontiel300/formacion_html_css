@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #7C6A0A;
+  overflow-x: hidden;
+}
+
+.nabvar {
+  width: 100%;
+  min-height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  border-top: 5px solid #149bd7;
+}
+.nabvar p {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.nabvar .button {
+  display: flex;
+  gap: 0.65rem;
+}
+.nabvar .button button {
+  background: none;
+  border-style: none;
+}
+.nabvar .button button {
+  border: 0;
+  padding: 0.35rem;
+}
+.nabvar .button button img {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.main-section {
+  width: 100%;
+  min-width: 0;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.25rem 5vw 3rem;
+}
+.main-section > article,
+.main-section > section {
+  margin-bottom: 2.5rem;
+}
+.main-section > article {
+  display: flex;
+  gap: 3rem;
+  min-height: 330px;
+}
+.main-section .imapct-section {
+  flex: 1;
+}
+.main-section .imapct-section h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+.main-section .imapct-section p {
+  max-width: 36rem;
+  line-height: 1.6;
+}
+.main-section .imapct-section button {
+  margin-top: 0.75rem;
+  padding: 0.8rem 1.5rem;
+  background: #FA9500;
+  border: 0;
+  border-radius: 2rem;
+  color: white;
+  font: inherit;
+  font-weight: 700;
+}
+.main-section .image-section img {
+  display: block;
+  width: min(42vw, 420px);
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.product-section h2,
+.info-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.healthcare,
+.furniture {
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.healthcare h2,
+.furniture h2 {
+  grid-column: 1/-1;
+}
+
+.healthcare {
+  background-color: #FFEFE7;
+}
+
+.furniture {
+  background-color: #FFEFE7;
+}
+
+.product-card {
+  position: relative;
+  min-width: 0;
+  padding: 1rem;
+  background: #FFDAC6;
+  border-radius: 0.35rem;
+  box-shadow: 0 0.2rem 0.55rem rgba(124, 106, 10, 0.12);
+  display: block;
+  min-height: 0;
+  gap: 0;
+  overflow: hidden;
+}
+.product-card > img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.25rem;
+}
+.product-card h3 {
+  margin: 0.7rem 0 0.15rem;
+  font-size: 1.1rem;
+}
+.product-card p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.3;
+}
+.product-card .favorite {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+  padding: 0.2rem;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.product-card .favorite img {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.info-section {
+  display: grid;
+  gap: 2rem;
+}
+.info-section .about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.info-section .about-us h2 {
+  grid-column: 1/-1;
+}
+.info-section .about-us .earth,
+.info-section .about-us .innovation {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  line-height: 1.35;
+}
+.info-section .about-us img {
+  width: 4rem;
+  height: 4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.info-section .about-us .earth img {
+  content: url("../assets/img/earth.png");
+}
+.info-section .about-us .innovation img {
+  content: url("../assets/img/ecology.png");
+}
+.info-section .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.info-section .gallery h2 {
+  grid-column: 1/-1;
+}
+.info-section .gallery div {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  border: 3px solid #149bd7;
+}
+.info-section .gallery div:hover {
+  transform: scale(1.1);
+}
+.info-section .gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info-section .gallery div:nth-of-type(1) {
+  background: none;
+}
+.info-section .gallery div:nth-of-type(2) {
+  background: none;
+}
+.info-section .gallery div:nth-of-type(3) {
+  background: none;
+}
+.info-section .location .map {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.info-section .location .map img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info-section .location p::after {
+  content: "Centro Mayor Centro Comercial";
+  display: block;
+  margin-top: 0.75rem;
+  color: #d35d4c;
+}
+
+footer {
+  display: block;
+  clear: both;
+  width: 100%;
+  min-height: 180px;
+  padding: 1.5rem 5vw;
+  background-color: #FA9500;
+  color: white;
+}
+footer h3 {
+  margin: 0 0 1rem;
+}
+footer p {
+  margin: 0.3rem 0;
+}
+footer .icono {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+footer .icono img {
+  width: 1.1rem;
+  height: 1.1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .icono img:nth-child(1) {
+  content: url("../assets/img/facebook-logo.png");
+}
+footer .icono img:nth-child(2) {
+  content: url("../assets/img/instagram-logo.png");
+}
+footer .icono img:nth-child(3) {
+  content: url("../assets/img/twitter-logo.png");
+}
+
+@media (max-width: 600px) {
+  .main-section,
+  .product-section,
+  .healthcare,
+  .furniture,
+  .info-section {
+    width: 100%;
+    min-width: 0;
+  }
+  .main-section > article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    min-height: 0;
+  }
+  .main-section > article .imapct-section {
+    margin: 0;
+  }
+  .main-section > article .imapct-section h1 {
+    font-size: 1.35rem;
+  }
+  .main-section > article .imapct-section p {
+    font-size: 0.72rem;
+  }
+  .main-section > article .imapct-section button {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.7rem;
+  }
+  .main-section > article .image-section img {
+    width: 100%;
+    height: 190px;
+    margin: 0;
+  }
+  .healthcare,
+  .furniture {
+    gap: 0.5rem;
+    padding: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .product-card {
+    padding: 0.7rem;
+  }
+  .product-card .favorite img {
+    width: 1rem;
+    height: 1rem;
+  }
+  .product-card > img {
+    height: 105px;
+  }
+  .product-card h3 {
+    margin-top: 0.45rem;
+    font-size: 0.75rem;
+  }
+  .product-card p {
+    font-size: 0.58rem;
+  }
+  .product-section h2,
+  .info-section h2 {
+    font-size: 0.9rem;
+  }
+  .info-section .about-us {
+    font-size: 0.65rem;
+  }
+  .info-section .about-us img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .info-section .gallery div {
+    height: 80px;
+  }
+  .info-section .gallery {
+    gap: 0.5rem;
+  }
+  .info-section .location .map {
+    height: 145px;
+  }
+}/*# sourceMappingURL=main.css.map */

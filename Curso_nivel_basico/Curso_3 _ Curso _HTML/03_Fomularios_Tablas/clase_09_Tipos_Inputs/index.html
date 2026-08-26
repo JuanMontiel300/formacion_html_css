@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de inputs</title>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="18" max="70">
+        </div>
+
+        <div>
+            <label for="fecha"></label>
+            <input type="date" name="fecha" id="fecha">
+        </div>
+
+        <div>
+            <label for="color"></label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <fieldset>
+            <legend>Genero</legend>
+            <input type="radio" name="genero" id="masculino">
+            <label for="masculino" value="M">Hombre</label>
+            <input type="radio" name="genero" id="femenino" value="F">
+            <label for="femenino">Mujer</label>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

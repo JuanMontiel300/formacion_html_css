@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            color: brown;
+        }
+        
+        div>div {
+            color: red;
+        }
+        
+        div>div>div {
+            color: blue;
+        }
+        
+        .es {
+            color: green;
+        }
+        
+        div+select {
+            background-color: yellow;
+        }
+        
+        div~p {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <p>Hola estoy haciendo nada jajaj</p>
+        <p>hola</p>
+        <p>soy</p>
+        <p>Montiel</p>
+    </div>
+    <div class="prueba">
+        <div>
+            hola mundo
+            <p>Hola</p>
+            <div class="es">es</div>
+        </div>
+    </div>
+    <p>hola mundo</p>
+    <select>
+        <option value="1">uno</option>
+        <option value="2">dos</option>
+        <option value="3">tres</option>
+    </select>
+</body>
+
+</html>

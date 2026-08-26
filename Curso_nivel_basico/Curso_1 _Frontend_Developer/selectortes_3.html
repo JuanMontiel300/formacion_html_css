@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: red;
+        }
+        
+        p::first-letter {
+            color: red;
+        }
+        
+        p::before {
+            content: ";) ";
+        }
+        
+        h2:hover {
+            color: blue;
+        }
+        
+        div p:nth-child(2) {
+            color: green;
+        }
+        
+        div>div .prueba2 {
+            color: blue;
+        }
+        
+        div>div .prueba2 h1:hover::first-letter {
+            color: red;
+        }
+        
+         ::placeholder {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hola estoy programando</h2>
+    <div>
+        <p>lapiz</p>
+        <p>Color </p>
+        <p> pluma</p>
+    </div>
+
+    <input type="text" placeholder="Escribe algo...">
+
+    <div>
+        <div>
+            <div class="prueba2">
+                <h1>hola mundo</h1>
+                <p>Hola estoy haciendo nada jajaj</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background: blue;
+        }
+        
+        .one {
+            z-index: 4;
+        }
+        
+        .two {
+            z-index: 3;
+        }
+        
+        .rojo {
+            width: 20px;
+            height: 20px;
+            background: #ec0c0c;
+            z-index: 4;
+        }
+        
+        .azul {
+            width: 20px;
+            height: 20px;
+            background: blue;
+            z-index: 3;
+            top: -6px;
+        }
+        
+        .amarillo {
+            width: 20px;
+            height: 20px;
+            background: yellow;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">CSS :)</div>
+    <div class="two">HTMl :/</div>
+    <section>
+        <div class="rojo">Red</div>
+        <div class="azul">Blue
+            <div class="amarillo">Yellow</div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

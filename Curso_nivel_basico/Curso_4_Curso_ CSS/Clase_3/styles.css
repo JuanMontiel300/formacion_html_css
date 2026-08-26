@@ -1,0 +1,23 @@
+input:focus {
+    outline: 2px solid green;
+}
+
+ul li:first-child {
+    color: brown;
+    font-weight: bold;
+}
+
+li:last-child {
+    color: aqua;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: lime;
+}
+
+.quote::after {
+    content: ':)';
+    color: rgb(40, 22, 197);
+    font-size: 20px;
+}

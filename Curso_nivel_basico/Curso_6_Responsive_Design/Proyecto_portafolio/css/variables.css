@@ -1,0 +1,15 @@
+:root {
+    --color-bg: #0F172A;
+    /* Fondo */
+    --color-surface: #1E293B;
+    /* Tarjetas */
+    --color-primary: #3B82F6;
+    /* Azul principal */
+    --color-accent: #06B6D4;
+    /* Cian */
+    --color-text: #F8FAFC;
+    /* Texto principal */
+    --color-text-muted: #94A3B8;
+    /* Texto secundario */
+    --color-border: #334155;
+}
