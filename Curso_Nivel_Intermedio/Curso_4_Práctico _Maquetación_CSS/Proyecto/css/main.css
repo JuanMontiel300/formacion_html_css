@@ -216,25 +216,38 @@ nav .nav-links a {
 .contact-main-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 40px;
-    padding: 35px 50px;
-    background-color: #e6e0ed;
+    gap: 30px;
+    padding: 40px 50px;
+    background-color: #dfe1ee;
+    align-items: center;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
+    min-height: 120px;
 }
 
 .contact-item a {
     color: #111;
     font-weight: bold;
     border-bottom: 1px solid #47cfac;
+    display: inline-block;
 }
 
 .contact-item p {
     margin: 8px 0 0;
+    color: #111;
+}
+
+.contact-item img {
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    object-fit: contain;
+    padding-left: 0;
 }
 
 .profile-main-container {
