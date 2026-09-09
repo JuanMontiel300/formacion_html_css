@@ -1,0 +1,91 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 550px;
+    font-family: 'Lato', sans-serif;
+}
+
+.container1,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6,
+.container7,
+.container8,
+.container9 {
+    width: 180px;
+    height: 180px;
+    background: turquoise;
+    border: 1px solid white;
+    display: flex;
+}
+
+.element1,
+.element2,
+.element3 {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.element1 {
+    background: papayawhip;
+}
+
+.element2 {
+    background: pink;
+}
+
+.element3 {
+    background: lightcyan;
+}
+
+.container1 {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container2 {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container3 {
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.container4 {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container5 {
+    justify-content: center;
+    align-items: center;
+}
+
+.container6 {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container7 {
+    justify-content: end;
+    align-items: flex-start;
+}
+
+.container8 {
+    justify-content: end;
+    align-items: center;
+}
+
+.container9 {
+    justify-content: end;
+    align-items: end;
+}

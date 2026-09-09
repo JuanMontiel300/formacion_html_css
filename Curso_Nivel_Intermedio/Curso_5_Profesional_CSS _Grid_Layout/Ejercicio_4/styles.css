@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 550px;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    background: turquoise;
+}
+
+.element1,
+.element2,
+.element3,
+.element4,
+.element5,
+.element6,
+.element7,
+.element8,
+.element9 {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.element1,
+.element2,
+.element3 {
+    position: absolute;
+    background: papayawhip;
+}
+
+.element4,
+.element5,
+.element6 {
+    position: absolute;
+    background: pink;
+}
+
+.element7,
+.element8,
+.element9 {
+    position: absolute;
+    background: lightcyan;
+}
+
+.element1 {
+    left: 0;
+    right: 0;
+}
+
+.element2 {
+    left: 0;
+    top: 60%;
+    transform: translate(0, -50%);
+}
+
+.element3 {
+    left: 0;
+    top: 100%;
+    transform: translate(0, -100%);
+}
+
+.element4 {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.element5 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.element6 {
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+}
+
+.element7 {
+    left: 100%;
+    transform: translate(-100%, 0);
+}
+
+.element8 {
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+}
+
+.element9 {
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%, -100%);
+}

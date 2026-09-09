@@ -1,0 +1,194 @@
+:root {
+    --paper: #e9e4d9;
+    --ink: #111;
+    --blue: #103475;
+    --display: "Bebas Neue", Impact, sans-serif;
+    --mono: "Space Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: var(--ink);
+    background: #bcb8ae;
+    font-family: var(--mono);
+}
+
+.poster {
+    position: relative;
+    width: min(92vw, 680px);
+    aspect-ratio: .72;
+    overflow: hidden;
+    isolation: isolate;
+    background: var(--paper);
+    background-image: radial-gradient(rgba(17, 17, 17, .11) .65px, transparent .65px);
+    background-size: 5px 5px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .25);
+}
+
+.poster__grid {
+    position: absolute;
+    inset: 0;
+    opacity: .32;
+    background: linear-gradient(90deg, transparent 49.7%, var(--ink) 50%, transparent 50.3%), linear-gradient(0deg, transparent 49.7%, var(--ink) 50%, transparent 50.3%);
+    background-size: 88px 88px;
+}
+
+.poster__dots {
+    position: absolute;
+    width: 120px;
+    height: 150px;
+    top: 8%;
+    right: 6%;
+    background-image: radial-gradient(var(--ink) 1.2px, transparent 1.4px);
+    background-size: 9px 9px;
+    opacity: .9;
+}
+
+.poster__header,
+.poster__footer {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.poster__header {
+    inset: 22px 30px auto;
+    justify-content: space-between;
+}
+
+.star {
+    color: var(--blue);
+    font-size: 20px;
+}
+
+.poster__header span:last-child {
+    font-size: 8px;
+}
+
+.poster__content {
+    position: absolute;
+    z-index: 4;
+    top: 13%;
+    left: 7%;
+}
+
+.kicker {
+    margin: 0 0 12px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.poster h1 {
+    margin: 0;
+    font: 170px/.72 var(--display);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.poster h1 em {
+    color: var(--blue);
+    font-style: normal;
+}
+
+.description {
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.poster__image {
+    position: absolute;
+    z-index: 2;
+    width: 69%;
+    height: 83%;
+    right: -7%;
+    top: 10%;
+    background: url("https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=85") 54% center/cover;
+    filter: grayscale(1) contrast(1.2);
+    mix-blend-mode: multiply;
+}
+
+.poster__circle {
+    position: absolute;
+    z-index: 3;
+    width: 190px;
+    aspect-ratio: 1;
+    right: 2%;
+    bottom: 9%;
+    border-radius: 50%;
+    background: var(--blue);
+    background-image: radial-gradient(rgba(255, 255, 255, .16) .7px, transparent .7px);
+    background-size: 5px 5px;
+}
+
+.poster__cross {
+    position: absolute;
+    z-index: 6;
+    color: var(--blue);
+    font: 32px Arial;
+}
+
+.poster__cross--one {
+    top: 36%;
+    left: 49%;
+}
+
+.poster__cross--two {
+    bottom: 26%;
+    right: 31%;
+}
+
+.poster__footer {
+    inset: auto 30px 24px;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 8px;
+    line-height: 1.4;
+}
+
+.poster__footer strong {
+    color: var(--blue);
+    font: 38px/.72 var(--display);
+    text-align: right;
+}
+
+.poster__footer small {
+    font: 8px var(--mono);
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    .poster {
+        width: 100vw;
+        min-height: 100vh;
+        aspect-ratio: auto;
+    }
+    .poster h1 {
+        font-size: clamp(108px, 31vw, 170px);
+    }
+    .poster__circle {
+        width: 30vw;
+    }
+    .poster__header,
+    .poster__footer {
+        left: 18px;
+        right: 18px;
+    }
+    .poster__dots {
+        width: 80px;
+        height: 100px;
+    }
+}

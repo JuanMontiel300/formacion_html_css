@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player Music</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="page-shell">
+        <div class="player-card">
+            <header class="topbar" aria-label="Controles principales">
+                <button class="icon-button" aria-label="Volver">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 15.5L12 10.5L17 15.5" />
+                    </svg>
+                </button>
+
+                <button class="icon-button" aria-label="Menú">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7H20" />
+                        <path d="M4 12H20" />
+                        <path d="M4 17H20" />
+                    </svg>
+                </button>
+            </header>
+
+            <section class="cover" aria-label="Portada del álbum">
+                <img class="cover-img" src="img/caballo.png" alt="Caballo" />
+            </section>
+
+            <div class="track-info">
+                <h1>Digital Bath</h1>
+                <h2>Deftones</h2>
+            </div>
+
+            <div class="timeline" aria-label="Progreso de la canción">
+                <span>3:00</span>
+                <div class="timeline-bar">
+                    <div class="timeline-progress"></div>
+                </div>
+                <span>4:15</span>
+            </div>
+
+            <div class="controls" aria-label="Controles del reproductor">
+                <button class="control-button-1 small icon-btn" aria-label="Anterior">
+                    <img src="./img/siguiente-otra-parte.png" alt="Anterior">
+                </button>
+
+                <button class="control-button small icon-btn" aria-label="Repetir">
+                    <img src="./img/volver-a-publicar.png" alt="Repetir">
+                </button>
+
+                <button class="control-button big" aria-label="Reproducir">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5V19L19 12L8 5Z" />
+                    </svg>
+                </button>
+
+                <button class="control-button dark" aria-label="Pausar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5H10V19H8Z" />
+                        <path d="M14 5H16V19H14Z" />
+                    </svg>
+                </button>
+
+                <button class="control-button small icon-btn" aria-label="Siguiente">
+                    <img src="./img/siguiente-pista.png" alt="Siguiente">
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
