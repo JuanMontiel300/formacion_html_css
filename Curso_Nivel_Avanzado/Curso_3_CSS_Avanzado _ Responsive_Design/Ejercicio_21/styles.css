@@ -1,0 +1,11 @@
+.seccion {
+    display: none;
+    padding: 20px;
+    background: rgb(23, 173, 223);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.seccion:target {
+    display: block;
+}

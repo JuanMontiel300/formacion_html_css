@@ -1,0 +1,11 @@
+section:is(.destacado) {
+    color: rgb(26, 166, 26);
+}
+
+section:where(.destacado) {
+    color: aqua;
+}
+
+.destacado {
+    color: red;
+}

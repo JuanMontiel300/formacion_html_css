@@ -1,0 +1,4 @@
+div p:nth-child(2n of p) {
+    color: brown;
+    font-weight: bold;
+}

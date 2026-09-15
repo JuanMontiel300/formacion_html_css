@@ -1,0 +1,18 @@
+div:has(p) {
+    border: 2px solid black;
+    background: gray;
+    color: white;
+}
+
+label:has(input:checked) {
+    color: aqua;
+    font-weight: bold;
+}
+
+table:has(tr)+p {
+    display: block;
+}
+
+p {
+    display: none;
+}

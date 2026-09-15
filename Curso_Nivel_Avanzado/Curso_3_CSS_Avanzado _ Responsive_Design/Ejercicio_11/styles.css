@@ -1,0 +1,21 @@
+.caja {
+    width: clamp(200px, 50%, 500px);
+    height: 400px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.caja2 {
+    width: min(500px, 50%);
+    height: 400px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.caja3 p {
+    font-size: max(20px, 3vw);
+}
